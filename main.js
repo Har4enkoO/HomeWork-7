@@ -21,7 +21,7 @@ console.log(getTotalTaxes.call(ukraine));
 function getMySalary(country) {
   let result = {};
   result.salary = parseFloat((1500 - 0.5 + Math.random() * 501).toFixed());
-  result.taxes = parseFloat((country.tax * result.salary).toFixed());
+  result.taxes = parseFloat((this.tax * result.salary).toFixed());
   result.profit = parseFloat((result.salary - result.taxes).toFixed());
 
   return result;
